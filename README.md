@@ -30,18 +30,27 @@ The application uses a Linear Regression model trained on cleaned car data to es
 ## Project Structure
 
 Price-My-Car/
+
 │
 ├── app.py
+
 ├── LinearRegressionModel.pkl
+
 ├── Cleaned_Car_data.csv
+
 │
 ├── templates/
+
 │   └── index.html
 │
+
 ├── static/
+
 │   ├── css/
+
 │   └── js/
 │
+
 └── README.md
 
 ---
