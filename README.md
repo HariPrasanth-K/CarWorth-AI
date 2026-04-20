@@ -1,43 +1,75 @@
-# 🚗 Price My Car
+# Price My Car
 
-Welcome to **Price My Car** — your ultimate car price predictor! 🔥
+## Overview
 
----
+Price My Car is a Flask-based web application that predicts the price of a used car using a machine learning model. The prediction is based on inputs such as car company, model, manufacturing year, fuel type, and kilometers driven.
 
-## 🔍 What is Price My Car?
-
-Price My Car is an intelligent web app that helps you **estimate the price** of a used car based on key details like brand, model, year, fuel type, and kilometers driven. Whether you're buying or selling, this tool gives you a **quick and accurate price prediction**! 💸✨
+The application uses a Linear Regression model trained on cleaned car data to estimate a fair market price.
 
 ---
 
-## 🚀 Features
+## Features
 
-- Predicts car prices using a trained machine learning model 🤖
-- User-friendly and interactive web interface 🖥️
-- Supports multiple car brands and models 🚙
-- Considers important factors like manufacturing year, fuel type, and mileage ⛽️
-- Clean, responsive design for smooth user experience 🎨
-
----
-
-## ⚙️ How It Works
-
-1. Enter the details of the car (company, model, year, fuel type, kilometers driven) 📝
-2. Submit the form and let the model analyze the data 🔄
-3. Get a reliable price prediction instantly! 💰
+- Predicts used car prices using machine learning
+- Simple and clean web interface
+- Supports multiple car brands and models
+- Considers year, fuel type, and mileage
+- Provides instant price prediction
 
 ---
 
+## How It Works
 
-## 💻 Technologies Used
-
-- Python 🐍
-- Flask (Backend API) 🌐
-- HTML, CSS, Bootstrap (Frontend) 🎨
-- Scikit-learn (Machine Learning) 📊
-- Pandas & Numpy (Data Processing) 📈
+1. User enters car details (company, model, year, fuel type, kilometers driven)
+2. Data is sent to the backend Flask server
+3. The trained model processes the input
+4. The predicted price is displayed on the webpage
 
 ---
 
-# Have a Nice Car🚘
-“Let your car’s value be just a click away!” 
+## Project Structure
+
+Price-My-Car/
+│
+├── app.py
+├── LinearRegressionModel.pkl
+├── Cleaned_Car_data.csv
+│
+├── templates/
+│   └── index.html
+│
+├── static/
+│   ├── css/
+│   └── js/
+│
+└── README.md
+
+---
+
+## Future Improvements
+
+- Improve accuracy using advanced ML models (Random Forest, XGBoost)
+- Add location-based pricing
+- Deploy on cloud platforms
+- Add user authentication system
+- Add analytics dashboard
+
+---
+
+## Technologies Used
+
+- Python
+- Flask
+- Scikit-learn
+- Pandas
+- NumPy
+- HTML
+- CSS
+- Bootstrap
+- Pickle
+
+---
+
+## Disclaimer
+
+This project provides estimated prices only. Actual market prices may vary based on condition, location, and market demand.
